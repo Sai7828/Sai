@@ -12,18 +12,22 @@ Output the account balance after the attempted transaction, given as a number wi
 If there is not enough money in the account to complete the transaction, output the current bank balance
 */
 #include <iostream>
-
+#include<bits/stdc++.h>
+#include<stdio.h>
 using namespace std;
 
 int main()
 {
-   int a,b;
-   cin>>a;
-   cin>>b;
-   if(a%5==0 && a<b)
+   int a;
+   float b;
+   cin>>a>>b;
+  
+   //cout<<setprecision(3);
+   if(a%5==0 && a<=b-0.5)
    {
-       int c=b-a;
-       cout<<c-0.5;
+       float c=b-a;
+       //cout<<(c-0.5);
+       printf("%.2f",c-0.5);
    }
    else
    cout<<b;
